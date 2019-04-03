@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="application.MainController">
+    <children>
+        <VBox prefHeight="791.0" prefWidth="757.0">
+            <children>
+                <MenuBar VBox.vgrow="NEVER">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="New"/>
+                                <MenuItem mnemonicParsing="false" text="Open…"/>
+                                <Menu mnemonicParsing="false" text="Open Recent"/>
+                                <SeparatorMenuItem mnemonicParsing="false"/>
+                                <MenuItem mnemonicParsing="false" text="Close"/>
+                                <MenuItem mnemonicParsing="false" text="Save"/>
+                                <MenuItem mnemonicParsing="false" text="Save As…"/>
+                                <MenuItem mnemonicParsing="false" text="Revert"/>
+                                <SeparatorMenuItem mnemonicParsing="false"/>
+                                <MenuItem mnemonicParsing="false" text="Preferences…"/>
+                                <SeparatorMenuItem mnemonicParsing="false"/>
+                                <MenuItem mnemonicParsing="false" text="Quit"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Undo"/>
+                                <MenuItem mnemonicParsing="false" text="Redo"/>
+                                <SeparatorMenuItem mnemonicParsing="false"/>
+                                <MenuItem mnemonicParsing="false" text="Cut"/>
+                                <MenuItem mnemonicParsing="false" text="Copy"/>
+                                <MenuItem mnemonicParsing="false" text="Paste"/>
+                                <MenuItem mnemonicParsing="false" text="Delete"/>
+                                <SeparatorMenuItem mnemonicParsing="false"/>
+                                <MenuItem mnemonicParsing="false" text="Select All"/>
+                                <MenuItem mnemonicParsing="false" text="Unselect All"/>
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About MyHelloApp"/>
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="426.0" prefWidth="639.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label alignment="CENTER" layoutX="14.0" layoutY="383.0" prefHeight="10.0" prefWidth="84.0"
+                               style="&#10;" text="Title" textAlignment="CENTER" textFill="#170101" wrapText="false">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Button layoutX="182.0" layoutY="657.0" mnemonicParsing="false" onAction="#addBook"
+                                text="Add Book"/>
+                        <Label alignment="CENTER" layoutX="24.0" layoutY="415.0" prefHeight="27.0" prefWidth="84.0"
+                               style="&#10;" text="Author" textAlignment="CENTER" textFill="#170000" wrapText="false">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="24.0" layoutY="453.0" prefHeight="25.0" prefWidth="149.0"
+                               style="&#10;" text="Year of Publication" textAlignment="CENTER" textFill="#140000"
+                               wrapText="false">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="30.0" layoutY="486.0" prefHeight="27.0" prefWidth="84.0"
+                               style="&#10;" text="Publisher" textAlignment="CENTER" textFill="#170101"
+                               wrapText="false">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="24.0" layoutY="521.0" prefHeight="27.0" prefWidth="137.0"
+                               style="&#10;" text="Number of Pages" textAlignment="CENTER" textFill="#1b0101"
+                               wrapText="false">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="24.0" layoutY="596.0" prefHeight="27.0" prefWidth="84.0"
+                               style="&#10;" text="Genre" textAlignment="CENTER" textFill="#170000" wrapText="false">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="24.0" layoutY="560.0" prefHeight="27.0" prefWidth="103.0"
+                               style="&#10;" text="Description" textAlignment="CENTER" textFill="#140000"
+                               wrapText="false">
+                            <font>
+                                <Font size="14.0"/>
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="379.0" layoutY="380.0" prefHeight="27.0" prefWidth="84.0"
+                               style="&#10;" text="Image" textAlignment="CENTER" textFill="#1e0101" wrapText="false">
+                            <font>
+                                <Font size="18.0"/>
+                            </font>
+                        </Label>
+                        <TextField fx:id="publisherTF" layoutX="160.0" layoutY="487.0"/>
+                        <TextField fx:id="numberOfPagesTF" layoutX="160.0" layoutY="522.0" prefHeight="25.0"
+                                   prefWidth="149.0"/>
+                        <TextField fx:id="descriptionTF" layoutX="160.0" layoutY="561.0"/>
+                        <TextField fx:id="genreTF" layoutX="160.0" layoutY="597.0"/>
+                        <TextField fx:id="titleTF" layoutX="160.0" layoutY="380.0"/>
+                        <TextField fx:id="authorTF" layoutX="160.0" layoutY="416.0"/>
+                        <TextField fx:id="yearOfPublicationTF" layoutX="160.0" layoutY="453.0"/>
+                        <Label alignment="CENTER" layoutX="240.0" prefHeight="35.0" prefWidth="277.0" style="&#10;"
+                               text="Book Info System" textAlignment="CENTER" textFill="#170101" wrapText="false">
+                            <font>
+                                <Font name="Calibri Bold Italic" size="24.0"/>
+                            </font>
+                        </Label>
+                        <TableView fx:id="bookView" layoutX="30.0" layoutY="51.0" prefHeight="302.0" prefWidth="705.0">
+                            <columns>
+                                <TableColumn fx:id="titleColumn" onEditCommit="#changeTitleCellEvent" prefWidth="50.0"
+                                             text="Title"/>
+                                <TableColumn fx:id="authorColumn" onEditCommit="#changeAuthorCellEvent" prefWidth="60.0"
+                                             text="Author"/>
+                                <TableColumn fx:id="yearColumn" onEditCommit="#changeYearCellEvent" prefWidth="132.0"
+                                             text="Year of Publication"/>
+                                <TableColumn fx:id="publisherColumn" onEditCommit="#changePublisherCellEvent"
+                                             prefWidth="78.0" text="Publisher"/>
+                                <TableColumn fx:id="pagesColumn" onEditCommit="#changePagesCellEvent" prefWidth="133.0"
+                                             text="Number of Pages"/>
+                                <TableColumn fx:id="descriptionColumn" onEditCommit="#changeDescriptionCellEvent"
+                                             prefWidth="97.0" text="Description"/>
+                                <TableColumn fx:id="genreColumn" onEditCommit="#changeGenreCellEvent" prefWidth="59.0"
+                                             text="Genre"/>
+                                <TableColumn fx:id="photoColumn" onEditCommit="#changePhotoCellEvent"
+                                             prefWidth="93.60000000000002" text="Image"/>
+                            </columns>
+                        </TableView>
+                        <Button layoutX="30.0" layoutY="715.0" mnemonicParsing="false" onAction="#returnSceneChange"
+                                text="Return"/>
+                        <TextArea fx:id="textArea" layoutX="402.0" layoutY="585.0" prefHeight="75.0" prefWidth="265.0"/>
+                        <ImageView fx:id="imageView" fitHeight="165.0" fitWidth="180.0" layoutX="471.0" layoutY="397.0"
+                                   pickOnBounds="true" preserveRatio="true"/>
+                        <Button layoutX="402.0" layoutY="690.0" mnemonicParsing="false" onAction="#browseButton"
+                                text="Browse"/>
+                        <Button fx:id="saveButton" layoutX="283.0" layoutY="657.0" mnemonicParsing="false"
+                                onAction="#saveB" text="Save Button"/>
+                        <Button fx:id="loadButton" layoutX="82.0" layoutY="657.0" mnemonicParsing="false"
+                                onAction="#loadB" text="Load Button"/>
+                        <Button layoutX="182.0" layoutY="703.0" mnemonicParsing="false" onAction="#deleteBook"
+                                text="Delete Book"/>
+                        <TextField fx:id="search" layoutX="500.0" layoutY="680.0"/>
+                        <Button fx:id="sortButton" layoutX="700" layoutY="680.0" onAction="#sort" text="Sort"></Button>
+                        <ComboBox fx:id="searchBox" layoutX="500" layoutY="710" prefWidth="100" promptText="search key">
+                        </ComboBox>
+                        <ComboBox fx:id="sortBox" layoutX="610" layoutY="710" prefWidth="100" promptText="sort key">
+                        </ComboBox>
+                        <ComboBox fx:id="orderByBox" layoutX="720" layoutY="710" prefWidth="100" promptText="sort by"
+                                  visibleRowCount="2">
+                        </ComboBox>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

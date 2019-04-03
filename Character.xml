@@ -1,0 +1,44 @@
+<object-stream>
+  <application.MyHash>
+    <hashTable>
+      <application.MyList>
+        <head>
+          <contents class="application.BookCharacter">
+            <name>sad</name>
+            <gender>asd</gender>
+            <description>asd</description>
+          </contents>
+          <outer-class reference="../.."/>
+        </head>
+      </application.MyList>
+      <application.MyList/>
+      <application.MyList/>
+      <application.MyList/>
+      <application.MyList/>
+      <application.MyList/>
+      <application.MyList>
+        <head>
+          <contents class="application.BookCharacter">
+            <name>sad</name>
+            <gender>asd</gender>
+            <description>asd</description>
+          </contents>
+          <outer-class reference="../.."/>
+        </head>
+      </application.MyList>
+      <application.MyList>
+        <head>
+          <contents class="application.BookCharacter">
+            <name>sad</name>
+            <gender>asd</gender>
+            <description>asd</description>
+          </contents>
+          <outer-class reference="../.."/>
+        </head>
+      </application.MyList>
+      <application.MyList/>
+      <application.MyList/>
+    </hashTable>
+    <count>3</count>
+  </application.MyHash>
+</object-stream>

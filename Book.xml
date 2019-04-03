@@ -1,0 +1,45 @@
+<object-stream>
+  <application.MyHash>
+    <hashTable>
+      <application.MyList/>
+      <application.MyList/>
+      <application.MyList>
+        <head>
+          <contents class="application.Book">
+            <title>gf</title>
+            <author>g</author>
+            <year>1</year>
+            <publisher>sa</publisher>
+            <pages>1</pages>
+            <genre>g</genre>
+            <description>g</description>
+            <photo>C:\Users\as083\Desktop\d3400-dsc-1213-3200.jpg</photo>
+          </contents>
+          <outer-class reference="../.."/>
+        </head>
+      </application.MyList>
+      <application.MyList/>
+      <application.MyList/>
+      <application.MyList>
+        <head>
+          <contents class="application.Book">
+            <title>sad</title>
+            <author>asd</author>
+            <year>1</year>
+            <publisher>asd</publisher>
+            <pages>1</pages>
+            <genre>asd</genre>
+            <description>asd</description>
+            <photo>C:\Users\as083\Desktop\glen-canyon-national-recreation-area-1-HR.jpg</photo>
+          </contents>
+          <outer-class reference="../.."/>
+        </head>
+      </application.MyList>
+      <application.MyList/>
+      <application.MyList/>
+      <application.MyList/>
+      <application.MyList/>
+    </hashTable>
+    <count>2</count>
+  </application.MyHash>
+</object-stream>

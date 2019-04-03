@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BookCharacterController">
+    <children>
+        <VBox prefHeight="791.0" prefWidth="757.0">
+            <children>
+                <MenuBar VBox.vgrow="NEVER">
+                    <menus>
+                        <Menu mnemonicParsing="false" text="File">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="New" />
+                                <MenuItem mnemonicParsing="false" text="Open…" />
+                                <Menu mnemonicParsing="false" text="Open Recent" />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" text="Close" />
+                                <MenuItem mnemonicParsing="false" text="Save" />
+                                <MenuItem mnemonicParsing="false" text="Save As…" />
+                                <MenuItem mnemonicParsing="false" text="Revert" />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" text="Preferences…" />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" text="Quit" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Edit">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="Undo" />
+                                <MenuItem mnemonicParsing="false" text="Redo" />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" text="Cut" />
+                                <MenuItem mnemonicParsing="false" text="Copy" />
+                                <MenuItem mnemonicParsing="false" text="Paste" />
+                                <MenuItem mnemonicParsing="false" text="Delete" />
+                                <SeparatorMenuItem mnemonicParsing="false" />
+                                <MenuItem mnemonicParsing="false" text="Select All" />
+                                <MenuItem mnemonicParsing="false" text="Unselect All" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Help">
+                            <items>
+                                <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+                            </items>
+                        </Menu>
+                    </menus>
+                </MenuBar>
+                <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="426.0" prefWidth="639.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label alignment="CENTER" layoutX="116.0" layoutY="384.0" prefHeight="10.0" prefWidth="84.0" style="&#10;" text="Name" textAlignment="CENTER" textFill="#170101" wrapText="false">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="loadButton" layoutX="170.0" layoutY="573.0" mnemonicParsing="false" onAction="#loadC" text="Load Character" />
+                        <Button fx:id="addButton" layoutX="287.0" layoutY="573.0" mnemonicParsing="false" onAction="#addCharacter" text="Add Character" />
+                        <Label alignment="CENTER" layoutX="116.0" layoutY="415.0" prefHeight="27.0" prefWidth="84.0" style="&#10;" text="Gender" textAlignment="CENTER" textFill="#170000" wrapText="false">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="91.0" layoutY="453.0" prefHeight="25.0" prefWidth="149.0" style="&#10;" text="Description" textAlignment="CENTER" textFill="#140000" wrapText="false">
+                            <font>
+                                <Font size="14.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="nameTF" layoutX="259.0" layoutY="381.0" />
+                        <TextField fx:id="genderTF" layoutX="259.0" layoutY="416.0" />
+                        <TextField fx:id="descTF" layoutX="259.0" layoutY="453.0" />
+                        <Label alignment="CENTER" layoutX="240.0" prefHeight="35.0" prefWidth="277.0" style="&#10;" text="Character Info System" textAlignment="CENTER" textFill="#170101" wrapText="false">
+                            <font>
+                                <Font name="Calibri Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                        <TableView fx:id="characterView" layoutX="127.0" layoutY="54.0" prefHeight="301.0" prefWidth="385.0">
+                            <columns>
+                                <TableColumn fx:id="nameColumn" onEditCommit="#changeNameCellEvent" prefWidth="125.0" text="Name" />
+                                <TableColumn fx:id="genderColumn" onEditCommit="#changeGenderCellEvent" prefWidth="133.0" text="Gender" />
+                                <TableColumn fx:id="descColumn" onEditCommit="#changeDescriptionCellEvent" prefWidth="126.0" text="Description" />
+                            </columns>
+                        </TableView>
+                        <Button fx:id="returnButton" layoutX="30.0" layoutY="715.0" mnemonicParsing="false" onAction="#returnSceneChange" text="Return" />
+                  <Button fx:id="saveButton" layoutX="56.0" layoutY="573.0" mnemonicParsing="false" onAction="#saveB" text="Save Character" />
+                  <Button layoutX="399.0" layoutY="573.0" mnemonicParsing="false" onAction="#deleteBookCharacter" text="Delete Character" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
